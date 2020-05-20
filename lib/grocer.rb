@@ -30,6 +30,7 @@ def consolidate_cart(cart)
     new_listing = cart[counter]
     new_listing[:counter] = 1
     new_cart << new_listing
+    counter += 1
   end
   new_cart
 end
