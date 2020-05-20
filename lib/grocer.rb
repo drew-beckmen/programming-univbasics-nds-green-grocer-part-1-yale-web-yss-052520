@@ -8,23 +8,23 @@ def check_shelf(shelf_hash, name)
 end
 
 def find_item_by_name_in_collection(name, collection)
-  # Implement me first!
-  #
-  # Consult README for inputs and outputs
   collection.length.times do |index|
     var = check_shelf(collection[index], name)
     if not var.nil?
-      #need to cast back to a hash since find returns an array. 
-      return [var].to_h
+      return [var].to_h   #need to cast back to a hash since find returns an array.
     end
   end
   nil
 end
+
+def find_all_instances(cart, name)
 
 def consolidate_cart(cart)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
+  new_cart = []
+
 
 end
