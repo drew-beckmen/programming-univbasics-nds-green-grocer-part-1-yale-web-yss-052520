@@ -11,7 +11,6 @@ def find_item_by_name_in_collection(name, collection)
   collection.length.times do |index|
     var = check_shelf(collection[index], name)
     if not var.nil?
-      binding.pry
       return [var].to_h
     end
   end
