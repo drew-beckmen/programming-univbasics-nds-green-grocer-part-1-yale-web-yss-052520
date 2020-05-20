@@ -28,7 +28,7 @@ def consolidate_cart(cart)
     else
       #If the item is not in the consolidated cart, add it
       new_listing = cart[counter]
-      new_listing[:counter] = 1
+      new_listing[:count] = 1
       new_cart << new_listing
     end
     counter += 1
