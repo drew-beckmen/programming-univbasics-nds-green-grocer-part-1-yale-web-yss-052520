@@ -5,6 +5,7 @@ def check_shelf(shelf_hash, name)
   binding.pry
   arr.to_h
 end
+
 def find_item_by_name_in_collection(name, collection)
   # Implement me first!
   #
