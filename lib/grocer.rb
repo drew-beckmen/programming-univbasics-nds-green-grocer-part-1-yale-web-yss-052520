@@ -1,6 +1,7 @@
 require 'pry'
 
 def check_shelf(shelf_hash, name)
+  binding.pry
   shelf_hash.find {|key, value| value==name}
 end
 
