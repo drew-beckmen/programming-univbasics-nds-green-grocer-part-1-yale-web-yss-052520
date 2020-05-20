@@ -1,14 +1,14 @@
+require 'pry'
 def find_item_by_name_in_collection(name, collection)
   # Implement me first!
   #
   # Consult README for inputs and outputs
   collection.length.times do |index|
     collection[index].find do |key, value|
-      if key == name
-        return collection[index]
-      end
+      key == name
     end
   end
+end
 
 end
 
