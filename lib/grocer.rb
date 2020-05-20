@@ -5,8 +5,8 @@ def find_item_by_name_in_collection(name, collection)
   # Consult README for inputs and outputs
   collection.length.times do |index|
     collection[index].find do |key, value|
-      #binding.pry
-      key == name
+      binding.pry
+      value == name
     end
   end
 end
