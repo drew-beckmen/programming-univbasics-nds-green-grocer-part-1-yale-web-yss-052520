@@ -1,8 +1,7 @@
 require 'pry'
 
 def check_shelf(shelf_hash, name)
-  arr = shelf_hash.find {|key, value| value==name}
-  pp arr.to_h
+  shelf_hash.find {|key, value| value==name}
 end
 
 def find_item_by_name_in_collection(name, collection)
@@ -10,7 +9,8 @@ def find_item_by_name_in_collection(name, collection)
   #
   # Consult README for inputs and outputs
   collection.length.times do |index|
-    check_shelf(collection[index], name)
+    var = check_shelf(collection[index], name)
+    puts var
   end
 end
 
