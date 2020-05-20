@@ -25,7 +25,7 @@ def consolidate_cart(cart)
     #The case in which this item is already within the new array of hashes with counts
     if not check_shelf(new_cart, shopping_item).nil?
       check_shelf(new_cart, shopping_item)[:count] += 1
-    else 
+    else
       #If the item is not in the consolidated cart, add it
       new_listing = cart[counter]
       new_listing[:counter] = 1
