@@ -17,14 +17,15 @@ def find_item_by_name_in_collection(name, collection)
   nil
 end
 
-def find_all_instances(cart, name)
-
 def consolidate_cart(cart)
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This returns a new Array that represents the cart. Don't merely
-  # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   new_cart = []
+  counter = 0
+  while counter < cart.size do
+    shopping_item = cart[counter][:item]
+    #The case in which this item is already within the new array of hashes with counts 
+    if not check_shelf(new_cart, shopping_item).nil?
+  end
+
 
 
 end
