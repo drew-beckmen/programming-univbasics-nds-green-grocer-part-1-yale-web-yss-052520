@@ -14,7 +14,7 @@ def find_item_by_name_in_collection(name, collection)
       return [var].to_h
     end
   end
-  return nil
+  nil
 end
 
 def consolidate_cart(cart)
