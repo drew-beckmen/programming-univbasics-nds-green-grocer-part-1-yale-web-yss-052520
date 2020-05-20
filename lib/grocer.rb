@@ -2,7 +2,7 @@ require 'pry'
 
 def check_shelf(shelf_hash, name)
   arr = shelf_hash.find {|key, value| value==name}
-  [arr].to_h
+  arr.to_h
 end
 
 def find_item_by_name_in_collection(name, collection)
