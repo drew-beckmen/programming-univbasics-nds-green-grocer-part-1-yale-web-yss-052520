@@ -1,7 +1,6 @@
 require 'pry'
 
 def check_shelf(shelf_hash, name)
-  binding.pry
   shelf_hash.find {|key, value| value==name}
 end
 
@@ -13,7 +12,7 @@ def find_item_by_name_in_collection(name, collection)
     var = check_shelf(collection[index], name)
     if not var.nil?
       return [var].to_h
-    end 
+    end
   end
 end
 
