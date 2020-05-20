@@ -10,7 +10,7 @@ def find_item_by_name_in_collection(name, collection)
   # Consult README for inputs and outputs
   collection.length.times do |index|
     var = check_shelf(collection[index], name)
-    puts var
+    puts [var].to_h
   end
 end
 
